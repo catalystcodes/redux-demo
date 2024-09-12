@@ -6,7 +6,7 @@ import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 
 export default function TabOneScreen({}: RootTabScreenProps<"TabOne">) {
-  const balance = useSelector((state) => state.balance.value);
+  const balance = useSelector((state: any) => state.balance.value);
   const dispatch = useDispatch();
   return (
     <View style={styles.container}>
